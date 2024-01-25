@@ -1,4 +1,3 @@
-
 /* Réinitialisation des styles et styles généraux */
 * {
     margin: 0;
@@ -13,21 +12,24 @@ body {
     line-height: 1.6;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
-.error{
+
+.error {
     color: red;
     margin-top: 0;
     padding-top: 0;
     display: none;
 }
-.success{
+
+.success {
     color: rgb(8, 125, 8);
     text-align: center;
     margin: 10px 0;
     display: none;
 }
+
 /* Header styles */
 header {
     background-color: #333;
@@ -35,36 +37,42 @@ header {
     padding: 1em;
     text-align: center;
 }
+
 /* utilisation de flexbox pour mettre en forme les éléments fils de la barre de navigation */
-header nav{
+header nav {
     width: 100%;
     height: 70px;
     display: inline-block;
     display: flex;
     justify-content: space-between;
-    align-items: center ;
+    align-items: center;
 }
-nav .logo{
+
+nav .logo {
     width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.logo img{
+
+.logo img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
+
 /* le menu de la liste des éléments de navigation */
-nav menu{
-  font-size: 22px;
+nav menu {
+    font-size: 22px;
 }
-nav menu div{
+
+nav menu div {
     display: inline-block;
     margin-right: 10px;
 }
- ul {
+
+ul {
     list-style-type: none;
 }
 
@@ -82,50 +90,79 @@ section {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 /* utilisation du positionnement en absolute pour positionner à droite le sidebar */
-aside.side-bar{
+aside.side-bar {
     max-width: 300px;
     position: absolute;
     right: 20px;
     top: 155px;
 }
+
 @media all and (max-width: 1400px) {
-    aside.side-bar{
+    aside.side-bar {
         position: inherit !important;
         max-width: 800px !important;
         padding: 0 10px;
         margin: auto;
     }
-    .side-bar section{
+
+    .side-bar section {
         display: inline-block;
         width: 48%;
         min-height: 340px;
         max-height: 340px;
         overflow-y: hidden;
     }
-    .side-bar section:last-child{
+
+    .side-bar section:last-child {
         float: right;
+    }
+
+}
+
+@media all and (max-width:411px) {
+    .side-bar section li {
+        font-size: 14px;
     }
 }
 
-.titre-principal{
-    text-align: center;
-    margin: 40px;
-}
-.contact-text{
-    max-width: 800px;
-    margin: auto;
-    margin-top: 20px;
-    text-align: justify;
-}
 /* Styles des articles */
-article{
+article {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style lié uniquement à la page des sites touristiques */
+
+.titre-principal {
+    text-align: center;
+    margin: 40px;
+}
+
+@media all and (max-width:767px) {
+    main article {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.contact-text {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+@media all and (max-width:820px) {
+    .contact-text {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 /* Image styles */
@@ -135,26 +172,38 @@ img {
     border-radius: 5px;
     margin-top: 15px;
 }
-.culture-type{
+
+.culture-type {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: flex-start;
     padding: 0;
+    flex-wrap: wrap;
 }
-.culture-type .card{
+
+.culture-type .card {
     margin: 10px;
     flex: 1;
+    min-width: 230px;
+    max-width: 300px;
     border-radius: 5px;
     border: 1px solid transparent;
+    box-shadow: 0 0 2px black inset;
 }
-.culture-type .card:hover{
+
+.culture-type .card:hover {
     border: 1px solid #717070;
 }
-.card .head{
+
+.card .head {
     width: 100%;
     /* height: 150px; */
 }
-.head img{
+
+.card .head h4{
+    padding-left: 20px;
+}
+.head img {
     width: 100%;
     height: 150px;
     object-fit: cover;
@@ -162,11 +211,13 @@ img {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
-.head h4{
+
+.head h4 {
     padding: 0;
     margin: 0;
 }
-.card .body{
+
+.card .body {
     width: 100%;
     padding: 10px;
 }
