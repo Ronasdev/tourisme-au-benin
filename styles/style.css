@@ -110,8 +110,7 @@ aside.side-bar {
     .side-bar section {
         display: inline-block;
         width: 48%;
-        min-height: 340px;
-        max-height: 340px;
+        min-height: 260px;
         overflow-y: hidden;
     }
 
@@ -121,9 +120,17 @@ aside.side-bar {
 
 }
 
-@media all and (max-width:411px) {
-    .side-bar section li {
-        font-size: 14px;
+@media all and (max-width:450px) {
+
+    .side-bar section {
+        display: block;
+        width: 100%;
+        height: auto ;
+        min-height: 0;
+    }
+
+    .side-bar section:last-child {
+        float: inherit;
     }
 }
 
