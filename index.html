@@ -11,11 +11,15 @@
 <body>
     <!-- Header -->
     <header>
+        <!-- titre du site -->
         <h1>Bienvenue au Bénin</h1>
+        <!-- La barre de navigation -->
         <nav>
+            <!-- Le logo du site -->
             <div class="logo">
-                <a href=""><img src="./images/logo.jpeg" alt="logo du site"></a>
+                <a href="index.html"><img src="./images/logo.jpeg" alt="logo du site"></a>
             </div>
+            <!-- le menu  -->
             <menu>
                 <div><a href="index.html">Accueil</a></div>
                 <div><a href="./pages/sites.html">Sites Touristiques</a></div>
@@ -25,6 +29,7 @@
         </nav>
     </header>
 
+    <!-- Le contenu principal -->
     <main>
         <!-- Contenu de la page d'accueil -->
         <section>
@@ -32,7 +37,9 @@
             <p>Bienvenue sur notre site touristique dédié à la découverte des merveilles du Bénin.</p>
             <p>Explorez nos pages pour en apprendre davantage sur les sites touristiques, la culture, et contactez-nous
                 pour
-                plus d'informations.</p>
+                plus d'informations.
+            </p>
+            <!-- La bannière -->
             <img src="images/benin.jpeg" alt="Paysage du Bénin">
         </section>
 
@@ -43,9 +50,9 @@
                 <h2>Sites Touristiques</h2>
                 <p>Découvrez les sites touristiques incroyables que le Bénin a à offrir.</p>
                 <ul>
-                    <li><a href="./pages/sites.html#amazone">Place des Amazones</a></li>
-                    <li><a href="./pages/sites.html#temple-python">Temple de Python de Ouidah</a></li>
-                    <li><a href="./pages/sites.html#porte-non-retour">Porte du nom retour</a></li>
+                    <li><a href="pages/sites.html#amazone">Place des Amazones</a></li>
+                    <li><a href="pages/sites.html#temple-python">Temple de Python de Ouidah</a></li>
+                    <li><a href="pages/sites.html#porte-non-retour">Porte du nom retour</a></li>
                 </ul>
             </section>
 
@@ -54,9 +61,9 @@
                 <h2>Culture Béninoise</h2>
                 <p>Explorez la riche culture du Bénin à travers ses traditions, sa cuisine et ses festivals.</p>
                 <ul>
-                    <li><a href="./pages/culture.html#traditions">Traditions</a></li>
-                    <li><a href="./pages/culture.html#cuisine">Cuisine</a></li>
-                    <li><a href="./pages/culture.html#festivals">Festivals</a></li>
+                    <li><a href="pages/culture.html#traditions">Traditions</a></li>
+                    <li><a href="pages/culture.html#cuisine">Cuisine</a></li>
+                    <li><a href="pages/culture.html#festivals">Festivals</a></li>
                 </ul>
             </section>
         </aside>
@@ -68,15 +75,15 @@
             <p class="success">Votre message a été envoyé avec succès! On vous contactera bientôt</p>
             <form action="" method="post">
                 <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" >
+                <input type="text" id="name" name="name">
                 <p class="error">Le champs du nom est obligatoire</p>
 
                 <label for="email">Email :</label>
-                <input type="email" id="email" name="email" >
+                <input type="email" id="email" name="email">
                 <p class="error">Le champs de l'email est obligatoire</p>
 
                 <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="4" ></textarea>
+                <textarea id="message" name="message" rows="4"></textarea>
                 <p class="error">Le champs du message est obligatoire</p>
 
                 <input type="submit" value="Envoyer">
