@@ -84,10 +84,28 @@ section {
 }
 /* utilisation du positionnement en absolute pour positionner à droite le sidebar */
 aside.side-bar{
-    width: 300px;
+    max-width: 300px;
     position: absolute;
     right: 20px;
     top: 155px;
+}
+@media all and (max-width: 1400px) {
+    aside.side-bar{
+        position: inherit !important;
+        max-width: 800px !important;
+        padding: 0 10px;
+        margin: auto;
+    }
+    .side-bar section{
+        display: inline-block;
+        width: 48%;
+        min-height: 340px;
+        max-height: 340px;
+        overflow-y: hidden;
+    }
+    .side-bar section:last-child{
+        float: right;
+    }
 }
 
 .titre-principal{
