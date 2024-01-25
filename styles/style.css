@@ -1,0 +1,203 @@
+
+/* Réinitialisation des styles et styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease 0.5s;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.error{
+    color: red;
+    margin-top: 0;
+    padding-top: 0;
+    display: none;
+}
+.success{
+    color: rgb(8, 125, 8);
+    text-align: center;
+    margin: 10px 0;
+    display: none;
+}
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+/* utilisation de flexbox pour mettre en forme les éléments fils de la barre de navigation */
+header nav{
+    width: 100%;
+    height: 70px;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+nav .logo{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/* le menu de la liste des éléments de navigation */
+nav menu{
+  font-size: 22px;
+}
+nav menu div{
+    display: inline-block;
+    margin-right: 10px;
+}
+ ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Section styles */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* utilisation du positionnement en absolute pour positionner à droite le sidebar */
+aside.side-bar{
+    width: 300px;
+    position: absolute;
+    right: 20px;
+    top: 155px;
+}
+
+.titre-principal{
+    text-align: center;
+    margin: 40px;
+}
+.contact-text{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: justify;
+}
+/* Styles des articles */
+article{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.culture-type{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0;
+}
+.culture-type .card{
+    margin: 10px;
+    flex: 1;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+.culture-type .card:hover{
+    border: 1px solid #717070;
+}
+.card .head{
+    width: 100%;
+    /* height: 150px; */
+}
+.head img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.head h4{
+    padding: 0;
+    margin: 0;
+}
+.card .body{
+    width: 100%;
+    padding: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Link styles */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+    border: 1px solid #333;
+}
+
+input[type="submit"]:hover {
+    background-color: #333;
+    color: #fff;
+}

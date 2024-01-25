@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Site Touristique du Bénin</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Bienvenue au Bénin</h1>
+        <nav>
+            <div class="logo">
+                <a href=""><img src="./images/logo.jpeg" alt="logo du site"></a>
+            </div>
+            <menu>
+                <div><a href="index.html">Accueil</a></div>
+                <div><a href="./pages/sites.html">Sites Touristiques</a></div>
+                <div><a href="./pages/culture.html">Culture</a></div>
+                <div><a href="./pages/contact.html">Contact</a></div>
+            </menu>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contenu de la page d'accueil -->
+        <section>
+            <h2>Découvrez le Bénin</h2>
+            <p>Bienvenue sur notre site touristique dédié à la découverte des merveilles du Bénin.</p>
+            <p>Explorez nos pages pour en apprendre davantage sur les sites touristiques, la culture, et contactez-nous
+                pour
+                plus d'informations.</p>
+            <img src="images/benin.jpeg" alt="Paysage du Bénin">
+        </section>
+
+        <!-- Barre lateral à droite de liste des categorie -->
+        <aside class="side-bar">
+            <!-- Section Sites Touristiques -->
+            <section>
+                <h2>Sites Touristiques</h2>
+                <p>Découvrez les sites touristiques incroyables que le Bénin a à offrir.</p>
+                <ul>
+                    <li><a href="./pages/sites.html#amazone">Place des Amazones</a></li>
+                    <li><a href="./pages/sites.html#temple-python">Temple de Python de Ouidah</a></li>
+                    <li><a href="./pages/sites.html#porte-non-retour">Porte du nom retour</a></li>
+                </ul>
+            </section>
+
+            <!-- Section Culture -->
+            <section>
+                <h2>Culture Béninoise</h2>
+                <p>Explorez la riche culture du Bénin à travers ses traditions, sa cuisine et ses festivals.</p>
+                <ul>
+                    <li><a href="./pages/culture.html#traditions">Traditions</a></li>
+                    <li><a href="./pages/culture.html#cuisine">Cuisine</a></li>
+                    <li><a href="./pages/culture.html#festivals">Festivals</a></li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- Section Contact -->
+        <section>
+            <h2>Contactez-nous</h2>
+            <p>Pour toute question ou information supplémentaire, n'hésitez pas à nous contacter.</p>
+            <p class="success">Votre message a été envoyé avec succès! On vous contactera bientôt</p>
+            <form action="" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" >
+                <p class="error">Le champs du nom est obligatoire</p>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" >
+                <p class="error">Le champs de l'email est obligatoire</p>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" ></textarea>
+                <p class="error">Le champs du message est obligatoire</p>
+
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Site Touristique du Bénin</p>
+    </footer>
+
+    <script src="./scripts/contact.js"></script>
+</body>
+
+</html>
